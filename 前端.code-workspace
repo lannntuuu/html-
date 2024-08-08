@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../../ichina"
+		}
+	],
+    "settings": {
+        "git.ignoreLimitWarning": true
+    }
+}
