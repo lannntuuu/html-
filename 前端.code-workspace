@@ -1,13 +1,17 @@
 {
 	"folders": [
-		{
-			"path": "."
-		},
-		{
-			"path": "../../ichina"
-		}
-	],
+        {
+            "path": "."
+        },
+        {
+            "path": "../../ichina"
+        },
+        {
+            "path": "../../www.allhistory.com"
+        }
+    ],
     "settings": {
-        "git.ignoreLimitWarning": true
+        "git.ignoreLimitWarning": true,
+        "liveServer.settings.multiRootWorkspaceName": "ttting7 -activitar-master"
     }
 }
