@@ -7,7 +7,7 @@
     <meta name="keywords" content="Activitar, unica, creative, html">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>mobancss</title>
+    <title>川剧简介</title>
 
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,600,700,800,900&display=swap" rel="stylesheet">
@@ -49,8 +49,8 @@
                 <div class="nav-menu">
                     <nav class="mainmenu mobile-menu">
                         <ul>
-                            <li class="active"><a href="./index.html">首页</a></li>
-                            <li><a href="./川剧简介.html">川剧简介</a></li>
+                            <li class><a href="./index.html">首页</a></li>
+                            <li class="active"><a href="./川剧简介.html">川剧简介</a></li>
                             <li><a href="./经典剧目.html">经典剧目</a></li>
                             <li><a href="./川剧文化专有项.html">川剧文化专有项</a></li>
                             <li><a href="./联系我们.html">联系我们</a></li>
@@ -65,19 +65,71 @@
 
     <!-- Breadcrumb Section Begin -->
     <section class="breadcrumb-section set-bg spad" data-setbg="img/about-bread.jpg">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="breadcrumb-text">
-                        <h2>About Us</h2>
-                        <div class="breadcrumb-controls">
-                            <a href="#"><i class="fa fa-home"></i> Home</a>
-                            <span>About Us</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
+
+        <p class="checkcaption">no modal boxes?</p>
+        <div class="check">
+            <input type="checkbox" id="switch1" name="switch1" class="switch" />
+            <label for="switch1"></label>
         </div>
+        
+        <div id="timeline">
+            <div class="dot" id="one">
+                <span></span>
+                <date>1280</date>
+            </div>
+            <div class="dot" id="two">
+                <span></span>
+                <date>1649</date>
+            </div>
+            <div class="dot" id="three">
+                <span></span>
+                <date>1831</date>
+            </div>
+            <div class="dot" id="four">
+                <span></span>
+                <date>1992</date>
+            </div>
+            <div class="inside"></div>
+        </div>
+        
+        <!-- Modals -->
+        
+        <article class='modal one'>
+            <date>26/06 - 1280</date>
+            <h2>Yo les gars</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates magnam excepturi laboriosam minima soluta,
+                quae. Sunt repellat totam non, et sed in veniam fuga odio eius! Nesciunt amet optio recusandae? Lorem ipsum
+                dolor sit amet, consectetur adipisicing elit. Ipsum sit dolor sint amet, corporis aperiam nihil, quas,
+                accusantium enim suscipit rem non possimus officiis. Recusandae hic at, fugiat eos eveniet.</p>
+        </article>
+        
+        <article class='modal two'>
+            <date>08/09 - 1649</date>
+            <h2>Salut les louzeurs</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates magnam excepturi laboriosam minima soluta,
+                quae. Sunt repellat totam non, et sed in veniam fuga odio eius! Nesciunt amet optio recusandae? Lorem ipsum
+                dolor sit amet, consectetur adipisicing elit. Ipsum sit dolor sint amet, corporis aperiam nihil, quas,
+                accusantium enim suscipit rem non possimus officiis. Recusandae hic at, fugiat eos eveniet.</p>
+        </article>
+        
+        <article class='modal three'>
+            <date>21/07 - 1831</date>
+            <h2>Eat 'em all !</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates magnam excepturi laboriosam minima soluta,
+                quae. Sunt repellat totam non, et sed in veniam fuga odio eius! Nesciunt amet optio recusandae? Lorem ipsum
+                dolor sit amet, consectetur adipisicing elit. Ipsum sit dolor sint amet, corporis aperiam nihil, quas,
+                accusantium enim suscipit rem non possimus officiis. Recusandae hic at, fugiat eos eveniet.</p>
+        </article>
+        
+        <article class='modal four'>
+            <date>03/02 - 1992</date>
+            <h2>Mais pourquoi?</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates magnam excepturi laboriosam minima soluta,
+                quae. Sunt repellat totam non, et sed in veniam fuga odio eius! Nesciunt amet optio recusandae? Lorem ipsum
+                dolor sit amet, consectetur adipisicing elit. Ipsum sit dolor sint amet, corporis aperiam nihil, quas,
+                accusantium enim suscipit rem non possimus officiis. Recusandae hic at, fugiat eos eveniet.</p>
+        </article>
+
     </section>
     <!-- Breadcrumb End -->
 
@@ -367,6 +419,78 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/masonry.pkgd.min.js"></script>
     <script src="js/main.js"></script>
+    <script 
+     <script>
+        // 将你的JavaScript代码添加到这里
+        $('.dot:nth-child(1)').click(function () {
+            $('.inside').animate({
+                'width': '20%'
+            }, 500);
+        });
+        $('.dot:nth-child(2)').click(function () {
+            $('.inside').animate({
+                'width': '40%'
+            }, 500);
+        });
+        $('.dot:nth-child(3)').click(function () {
+            $('.inside').animate({
+                'width': '60%'
+            }, 500);
+        });
+        $('.dot:nth-child(4)').click(function () {
+            $('.inside').animate({
+                'width': '80%'
+            }, 500);
+        });
+
+        if ($('#switch1').not(':checked')) {
+            $('.modal').wrap('<div class="mask"></div>')
+            $('.mask').click(function () {
+                $(this).fadeOut(300);
+                $('.mask article').animate({
+                    'top': '-100%'
+                }, 300)
+            });
+
+            $('.dot').click(function () {
+                var modal = $(this).attr('id');
+                $('.mask').has('article.' + modal).fadeIn(300);
+                $('.mask article.' + modal).fadeIn(0).animate({
+                    'top': '10%'
+                }, 300);
+            });
+        }
+
+        $("#switch1").click(function () {
+            if ($('#switch1').is(':checked')) {
+                $('.modal').unwrap('<div class="mask"></div>');
+                $('.modal').hide();
+                $('.modal').addClass('nobox');
+                $('.dot').click(function () {
+                    var modal = $(this).attr('id');
+                    $('article.nobox').hide()
+                    $('article.nobox.' + modal).fadeIn(200)
+                });
+            } else {
+                $('article').removeClass("nobox");
+                $('.modal').wrap('<div class="mask"></div>')
+                $('.mask').click(function () {
+                    $(this).fadeOut(300);
+                    $('.mask article').animate({
+                        'top': '-100%'
+                    }, 300)
+                });
+
+                $('.dot').click(function () {
+                    var modal = $(this).attr('id');
+                    $('.mask').has('article.' + modal).fadeIn(300);
+                    $('.mask article.' + modal).fadeIn(0).animate({
+                        'top': '10%'
+                    }, 300);
+                });
+            }
+        });
+    </script>
 </body>
 
 </html>

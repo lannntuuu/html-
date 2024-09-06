@@ -69,7 +69,7 @@ h4 {
         /* 调整标题顶部的边距 */
         margin-bottom: 0px;
         /* 调整标题底部的边距 */
-        font-size: 60px;
+        font-size: 40px;
         /* 调整标题的字体大小 */
         line-height: 1.2;
         /* 调整标题的行高 */
@@ -85,7 +85,7 @@ h6 {
 }
 
 p {
-    font-size: 35px;
+    font-size: 15px;
     font-family: "Nunito Sans", sans-serif;
     color: #8f8fa8;
     font-weight: 400;
@@ -99,9 +99,9 @@ img {
     display: block;
     margin-bottom: 200px;
 	max-width: 100%;
-    width: 500px;
+    width: 200px;
         /* 设置图片宽度 */
-    height: 700px;
+    height: 300px;
     /* 设置图片高度 */
     object-fit: cover;
     /* 保持图片的纵横比并裁剪它以填充给定的尺寸 */
@@ -191,7 +191,7 @@ ol {
 
 .primary-btn {
 	display: inline-block;
-	font-size: 40px;
+	font-size: 20px;
 	font-family: "Oswald", sans-serif;
 	font-weight: 600;
 	padding: 0 12px;
@@ -199,8 +199,8 @@ ol {
 	letter-spacing: 2px;
 	text-transform: uppercase;
 	text-align: center;
-	width: 300px;
-	height: 70px;
+	width: 200px;
+	height: 50px;
 	border-left: 2px solid #e16521;
 	border-right: 2px solid #e4381C;
 	-webkit-box-sizing: border-box;
